@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday Dear Gift</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+      animation: fadeIn 2s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    h2, h3 {
+      animation: popIn 1s ease-out;
+    }
+    @keyframes popIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .message {
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      margin: 2rem 0;
+    }
+    .center {
+      text-align: center;
+    }
+    img {
+      border-radius: 1rem;
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+<nav class="container-fluid">
+  <ul><li><strong>Happy Birthday Gift</strong></li></ul>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#" role="button">Celebrate</a></li>
+  </ul>
+</nav>
+<main class="container">
+  <div class="grid">
+    <section class="center">
+      <hgroup>
+        <h2>Happy Birthday, Gift 🎉</h2>
+        <h3>Wishing you joy, laughter, and love!</h3>
+      </hgroup>
+      <div class="message">
+        <p>Dear Gift,</p>
+        <p>Today is your special day! I hope you enjoy every moment and feel deeply loved.</p>
+        <p>Thank you for being so amazing. Here’s to more adventures!</p>
+      </div>
+
+      <figure>
+        <img src="https://happybirthdaydeargift.vercel.app/_next/image?url=%2Fgift.jpeg&w=384&q=75" alt="Gift" />
+        <figcaption><a href="https://happybirthdaydeargift.vercel.app" target="_blank">Original Site</a></figcaption>
+      </figure>
+
+      <h3>Let’s Celebrate!</h3>
+      <p>May your day be unforgettable!</p>
+    </section>
+  </div>
+</main>
+
+<section aria-label="Subscribe">
+  <div class="container">
+    <article>
+      <hgroup>
+        <h2>Stay in Touch</h2>
+        <h3>We'll keep the magic coming!</h3>
+      </hgroup>
+      <form class="grid">
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+      </form>
+    </article>
+  </div>
+</section>
+
+<footer class="container">
+  <small><a href="#">With ❤️</a> • <a href="#">By You</a></small>
+</footer>
+</body>
+</html>
